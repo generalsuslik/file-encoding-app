@@ -13,7 +13,12 @@ find_package(Qt5 COMPONENTS
   Widgets
   REQUIRED)
 
-add_executable(file_encoding main.cpp)
+add_executable(
+        file_encoding
+        main.cpp
+        huffman/Huffman.cpp
+        huffman/Huffman.h
+)
 target_link_libraries(file_encoding
   Qt5::Core
   Qt5::Gui
